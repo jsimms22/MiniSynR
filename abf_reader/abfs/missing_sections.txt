@@ -1,0 +1,63 @@
+    // GROUP 1 - File ID and size information
+    fFileSignature: u32,        //0
+    fFileVersionNumber: f32,    //4
+    nOperationMode: u16,        //8
+    lActualAcqLength: u32,      //10
+    nNumPointsIgnored: u16,     //14
+    lActualEpisodes: u32,       //16
+    lFileStartDate: u32,        //20
+    lFileStartTime: u32,        //24
+    lStopwatchTime: u32,        //28
+    fHeaderVersionNumber: f32,  //32
+    nFileType: u16,             //34
+    nMSBinFormat: u16,          //36
+
+    // GROUP 2 - File Structure
+    lDataSectionPtr: u32,       //40
+    lTagSectionPtr: u32,        //44
+    lNumTagEntries: u32,        //48
+    lScopeConfigPtr: u32,       //52
+    lNumScopes: u32,            //56
+    _lDACFilePtr: u32,          //60
+    _lDACFileNumEpisodes: u32,  //64
+    sUnused68: char,            //68 - 4 chars - unused
+    lDeltaArrayPtr: u32,        //72
+    lNumDeltas: u32,            //76
+    lVoiceTagPtr: u32,          //80
+    lVoiceTagEntries: u32,      //84
+    lUnused88: u32,             //88 - was number of automatic entries in Notebook section
+    lSynchArrayPtr: u32,        //92
+    lSynchArraySize: u32,       //96
+    nDataFormat: u16,           //100
+    nSimultaneousScan: u16,     //102
+    lStatisticsConfigPtr: u32,  //104
+    lAnnotationSectionPtr: u32, //108
+    lNumAnnotations: u32,       //112
+    sUnused004: char,           //116 - 2 chars - unused
+
+    // GROUP 3 - Trial Hierarchy Information
+    channelCountAcquired: u16,  //118
+    nADCNumChannels: u16,       //120
+    fADCSampleInterval: f32,    //122
+    fADCSecondSampleInterval: f32, //126
+    fSynchTimeUnit: f32,        //130
+    fSecondsPerRun: f32,        //134
+    lNumSamplesPerEpisode: u32, //138
+    lPreTriggerSamples: u32,    //142
+    lEpisodesPerRun: u32,       //146
+    lRunsPerTrial: u32,         //150
+    lNumberOfTrials: u32,       //154
+    nAveragingMode: u16,        //158
+    nUndoRunCount: u16,         //160
+    nFirstEpisodeInRun: u16,    //162
+    fTriggerThreshold: f32,     //164
+    nTriggerSource: u16,        //168
+    nTriggerAction: u16,        //170
+    nTriggerPolarity: u16,      //172
+    fScopeOutputInterval: f32,  //174
+    fEpisodeStartToStart: f32,  //178
+    fRunStartToStart: f32,      //182
+    fTrialStartToStart: f32,    //186
+    lAverageCount: u32,         //190
+    lClockChange: u32,          //194
+    nAutoTriggerStrategy: u16,  //198
